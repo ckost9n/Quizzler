@@ -9,11 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet var progressBar: UIProgressView!
+    @IBOutlet var trueButton: UIButton!
+    @IBOutlet var falseButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func answerButtonPressed(_ sender: UIButton) {
+        
+    }
+    
 }
 
