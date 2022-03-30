@@ -13,6 +13,7 @@
 		3CECAF4027F4A3C7008CF1D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CECAF3E27F4A3C7008CF1D7 /* Main.storyboard */; };
 		3CECAF4227F4A3CB008CF1D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CECAF4127F4A3CB008CF1D7 /* Assets.xcassets */; };
 		3CECAF4527F4A3CB008CF1D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CECAF4327F4A3CB008CF1D7 /* LaunchScreen.storyboard */; };
+		3CECAF4D27F4C00D008CF1D7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CECAF4C27F4C00C008CF1D7 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3CECAF4127F4A3CB008CF1D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CECAF4427F4A3CB008CF1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CECAF4627F4A3CB008CF1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CECAF4C27F4C00C008CF1D7 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				3CECAF3827F4A3C7008CF1D7 /* AppDelegate.swift */,
 				3CECAF3A27F4A3C7008CF1D7 /* SceneDelegate.swift */,
+				3CECAF4C27F4C00C008CF1D7 /* Question.swift */,
 				3CECAF3C27F4A3C7008CF1D7 /* ViewController.swift */,
 				3CECAF3E27F4A3C7008CF1D7 /* Main.storyboard */,
 				3CECAF4127F4A3CB008CF1D7 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				3CECAF3D27F4A3C7008CF1D7 /* ViewController.swift in Sources */,
 				3CECAF3927F4A3C7008CF1D7 /* AppDelegate.swift in Sources */,
 				3CECAF3B27F4A3C7008CF1D7 /* SceneDelegate.swift in Sources */,
+				3CECAF4D27F4C00D008CF1D7 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
