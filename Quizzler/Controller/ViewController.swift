@@ -12,8 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var progressBar: UIProgressView!
-    @IBOutlet var trueButton: UIButton!
-    @IBOutlet var falseButton: UIButton!
+    @IBOutlet var firstButton: UIButton!
+    @IBOutlet var secondButton: UIButton!
+    @IBOutlet var thirdButton: UIButton!
     
     private var quizBrain = QuizBrain()
     private var delayTime = 0.3
@@ -28,11 +29,10 @@ class ViewController: UIViewController {
     }
     
     private func setupUI() {
-        trueButton.layer.cornerRadius = 20
-        falseButton.layer.cornerRadius = 20
+        firstButton.layer.cornerRadius = 20
+        secondButton.layer.cornerRadius = 20
+        thirdButton.layer.cornerRadius = 20
         progressBar.progress = 0
-        
-        questionLabel.text = quizBrain.getQuestionText
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
@@ -53,11 +53,18 @@ class ViewController: UIViewController {
     }
     
     @objc private func updateUI() {
+        
         questionLabel.text = quizBrain.getQuestionText
         progressBar.setProgress(quizBrain.progress, animated: true)
         scoreLabel.text = "Score: \(quizBrain.getScore())"
-        trueButton.backgroundColor = .clear
-        falseButton.backgroundColor = .clear
+        
+        firstButton.setTitle(quizBrain.getAnswer()[0], for: .normal)
+        secondButton.setTitle(quizBrain.getAnswer()[1], for: .normal)
+        thirdButton.setTitle(quizBrain.getAnswer()[2], for: .normal)
+        
+        firstButton.backgroundColor = .clear
+        secondButton.backgroundColor = .clear
+        thirdButton.backgroundColor = .clear
     }
     
 }
