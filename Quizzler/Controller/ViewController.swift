@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var progressBar: UIProgressView!
     @IBOutlet var trueButton: UIButton!
@@ -18,8 +19,6 @@ class ViewController: UIViewController {
     private var delayTime = 0.3
     
     private var timer = Timer()
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +55,7 @@ class ViewController: UIViewController {
     @objc private func updateUI() {
         questionLabel.text = quizBrain.getQuestionText
         progressBar.setProgress(quizBrain.progress, animated: true)
-        
+        scoreLabel.text = "Score: \(quizBrain.getScore())"
         trueButton.backgroundColor = .clear
         falseButton.backgroundColor = .clear
     }
